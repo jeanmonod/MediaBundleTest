@@ -56,7 +56,7 @@ class DemoController extends Controller
     }
 
     /**
-     * @Route("/mymedia/{id}", name="_my_media")
+     * @Route("/media/{id}", name="_my_media")
      * @Template()
      */
     public function myMediaAction($id)

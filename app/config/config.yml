@@ -64,8 +64,11 @@ sonata_media:
                 - sonata.media.provider.file
 
             formats:
-                small: { width: 100 , quality: 70}
-                big:   { width: 500 , quality: 70}
+                small:     { width: 100 , quality: 70}
+                big:       { width: 500 , quality: 70}
+                smallbad:  { width: 100 , quality: 1}
+                bigbad:    { width: 500 , quality: 1}
+
 
     cdn:
         sonata.media.cdn.server:

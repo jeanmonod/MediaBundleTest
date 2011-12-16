@@ -3,6 +3,16 @@
 {% block title "my Media" %}
  
 {% block content %}
-    {% thumbnail media, 'small' %}
-    {% thumbnail media, 'big' %}
+    <p> small
+        {% thumbnail media, 'small' %}
+    </p>
+    <p> small low quality
+        {% thumbnail media, 'smallbad' %}
+    </p>
+    <p> big
+        {% thumbnail media, 'big' %}
+    </p>
+    <p> big low quality
+        {% thumbnail media, 'bigbad' %}
+    </p>
 {% endblock %}
