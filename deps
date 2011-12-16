@@ -76,3 +76,7 @@
 [KnpMenu]
     git=https://github.com/KnpLabs/KnpMenu.git
     target=/knp/menu
+
+[SonataDoctrineORMAdminBundle]
+    git=http://github.com/sonata-project/SonataDoctrineORMAdminBundle.git
+    target=/bundles/Sonata/DoctrineORMAdminBundle
