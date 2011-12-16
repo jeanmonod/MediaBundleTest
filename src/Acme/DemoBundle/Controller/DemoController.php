@@ -56,7 +56,7 @@ class DemoController extends Controller
     }
 
     /**
-     * @Route("/media/{id}", name="_my_media")
+     * @Route("/mymedia/{id}", name="_my_media")
      * @Template()
      */
     public function myMediaAction($id)
@@ -66,6 +66,20 @@ class DemoController extends Controller
         return array(
             'id' => $id,
             'media' => $media,
+        );
+    }
+    
+    /**
+     * @Route("/mygallery/{id}", name="_my_gallery")
+     * @Template()
+     */
+    public function myGalleryAction($id)
+    {
+        $mm = $this->container->get('sonata.media.manager.gallery');
+        $gallery = $mm->findOneBy(array('id' => $id));
+        return array(
+            'id' => $id,
+            'gallery' => $gallery,
         );
     }
 }
