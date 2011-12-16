@@ -2,3 +2,5 @@ vendor
 app/cache
 app/logs
 web/bundles/*
+app/config/parameters.ini
+web/uploads

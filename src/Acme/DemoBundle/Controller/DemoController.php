@@ -54,4 +54,18 @@ class DemoController extends Controller
 
         return array('form' => $form->createView());
     }
+
+    /**
+     * @Route("/mymedia/{id}", name="_my_media")
+     * @Template()
+     */
+    public function myMediaAction($id)
+    {
+        $mm = $this->container->get('sonata.media.manager.media');
+        $media = $mm->findOneBy(array('id' => $id));
+        return array(
+            'id' => $id,
+            'media' => $media,
+        );
+    }
 }
