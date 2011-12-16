@@ -80,3 +80,19 @@
 [SonataDoctrineORMAdminBundle]
     git=http://github.com/sonata-project/SonataDoctrineORMAdminBundle.git
     target=/bundles/Sonata/DoctrineORMAdminBundle
+
+[SonataMediaBundle]
+    git=http://github.com/sonata-project/SonataMediaBundle.git
+    target=/bundles/Sonata/MediaBundle
+
+[EasyExtendsBundle]
+    git=http://github.com/sonata-project/SonataEasyExtendsBundle.git
+    target=/bundles/Sonata/EasyExtendsBundle
+
+[Imagine]:
+    git=http://github.com/avalanche123/Imagine.git
+    target=/imagine
+
+[Gaufrette]
+    git=http://github.com/KnpLabs/Gaufrette.git
+    target=/gaufrette
